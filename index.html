@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#27aa99">
+		<meta name="theme-color" content="#27aa99">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/datepicker.min.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/ion.rangeSlider.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1179.css" media="print, (max-width: 1179px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<button class="close"></button>
+
+					<div class="mob_scroll">
+						<div class="top">
+							<div class="cont row">
+								<div class="time">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_time"></use></svg>
+									<span>10:00-21:00 Пн-Сб</span>
+								</div>
+
+								<div class="schema_link">
+									<a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+										<span>Схема проезда</span>
+									</a>
+								</div>
+
+								<div class="account">
+									<button class="no_line modal_link" data-content="#login_modal">Личный кабинет</button>
+
+									<!-- <span>Здравствуйте, <a href="/">Александра Иванова</a></span> -->
+
+									<div class="icon">
+										<svg><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									</div>
+
+									<!-- <div class="dropdown">
+										<div><a href="/">Профиль</a></div>
+										<div><a href="/">Заказы</a></div>
+										<div><a href="/">Бонусы</a></div>
+										<div><a href="/">Рассылки</a></div>
+										<div><a href="/">Выйти</a></div>
+									</div> -->
+								</div>
+							</div>
+						</div>
+
+
+						<div class="info">
+							<div class="cont row">
+								<a href="/" class="logo">
+									<img src="images/logo.png" alt="">
+								</a>
+
+								<div class="whatsapp">
+									<a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+										<span>Написать в WhatsApp</span>
+									</a>
+								</div>
+
+								<div class="phone">
+									<a href="tel:88003337715">8 (800) 333-77-15 </a>
+								</div>
+
+								<button class="order_btn modal_link" data-content="#order_modal">
+									<span>Записаться</span>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+								</button>
+							</div>
+						</div>
+
+
+						<div class="bottom">
+							<div class="cont row">
+								<nav class="menu row">
+									<div class="item">
+										<a href="/" class="sub_link">
+											О клинике<span class="arr"></span>
+										</a>
+
+										<div class="sub_menu">
+											<div class="cont row">
+												<div class="links">
+													<div><a href="/">О нас</a></div>
+													<div><a href="/">Лицензия</a></div>
+													<div><a href="/">Отзывы</a></div>
+													<div><a href="/">Публикации в СМИ</a></div>
+													<div><a href="/">Награды и научная деятельность</a></div>
+													<div><a href="/">Партнеры</a></div>
+													<div><a href="/">Контакты</a></div>
+													<div><a href="/">Реквизиты</a></div>
+													<div><a href="/">Программа лояльности</a></div>
+												</div>
+
+												<div class="banner">
+													<a href="/">
+														<img data-src="images/tmp/sub_menu_banner.jpg" alt="" class="lozad">
+													</a>
+												</div>
+											</div>
+
+											<div class="overlay"></div>
+										</div>
+									</div>
+
+									<div class="item">
+										<a href="/" class="sub_link">
+											Направления<span class="arr"></span>
+										</a>
+
+										<div class="sub_menu">
+											<div class="cont row">
+												<div class="links">
+													<div><a href="/">О нас</a></div>
+													<div><a href="/">Лицензия</a></div>
+													<div><a href="/">Отзывы</a></div>
+													<div><a href="/">Публикации в СМИ</a></div>
+													<div><a href="/">Награды и научная деятельность</a></div>
+													<div><a href="/">Партнеры</a></div>
+													<div><a href="/">Контакты</a></div>
+													<div><a href="/">Реквизиты</a></div>
+													<div><a href="/">Программа лояльности</a></div>
+												</div>
+
+												<div class="banner">
+													<a href="/">
+														<img data-src="images/tmp/sub_menu_banner.jpg" alt="" class="lozad">
+													</a>
+												</div>
+											</div>
+
+											<div class="overlay"></div>
+										</div>
+									</div>
+
+									<div class="item">
+										<a href="/">технологии</a>
+									</div>
+
+									<div class="item">
+										<a href="/">Специалисты</a>
+									</div>
+
+									<div class="item">
+										<a href="/">Прайс</a>
+									</div>
+								</nav>
+
+								<a href="/" class="analysis_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_analysis"></use></svg>
+									<span>Каталог<br> анализов</span>
+								</a>
+
+								<div class="shop_link modal_cont">
+									<button class="btn mini_modal_btn" data-modal-id="#shop_modal">
+										<div class="icon">
+											<svg><use xlink:href="images/sprite.svg#ic_shop"></use></svg>
+											<div class="count">3</div>
+										</div>
+										<span>Магазин<br> косметики</span>
+									</button>
+
+									<a href="/" class="mob_link">
+										<div class="icon">
+											<svg><use xlink:href="images/sprite.svg#ic_shop"></use></svg>
+											<div class="count">3</div>
+										</div>
+										<span>Магазин<br> косметики</span>
+									</a>
+
+									<div class="mini_modal" id="shop_modal">
+										<div class="count">В корзине 3 товара</div>
+										<div class="price">На сумму 15 597 руб.</div>
+
+										<a href="/" class="checkout_link">
+											<span>Оформить заказ</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+										</a>
+
+										<a href="/" class="cart_link">Перейти в корзину</a>
+									</div>
+								</div>
+
+								<div class="search modal_cont">
+									<button class="btn mini_modal_btn" data-modal-id="#search_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+									</button>
+
+									<div class="mini_modal" id="search_modal">
+										<form action="">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+
+											<input type="text" name="" value="" class="input" placeholder="Введите название направления или технологии...">
+
+											<button type="submit" class="submit_btn">Найти</button>
+
+											<div class="tips">
+												<div class="tip">Anty age</div>
+												<div class="tip">Anty age процедуры</div>
+												<div class="tip">Anty age программы</div>
+												<div class="tip">Anty age лорем ипсум</div>
+											</div>
+										</form>
+
+										<div class="overlay"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+						<button class="mob_menu_btn">
+							<span></span>
+						</button>
+
+						<div class="logo">
+							<img src="images/logo_mobile.png" alt="">
+							<img src="images/logo.png" alt="">
+						</div>
+
+						<div class="phone">
+							<a href="tel:88003337715">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone2"></use></svg>
+							</a>
+						</div>
+
+						<div class="search modal_cont">
+							<button class="btn mini_modal_btn" data-modal-id="#mob_search_modal">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="mob_search_modal">
+								<form action="">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+
+									<input type="text" name="" value="" class="input" placeholder="Введите название направления или технологии...">
+
+									<button type="submit" class="submit_btn">Найти</button>
+
+									<div class="tips">
+										<div class="tip">Anty age</div>
+										<div class="tip">Anty age процедуры</div>
+										<div class="tip">Anty age программы</div>
+										<div class="tip">Anty age лорем ипсум</div>
+									</div>
+								</form>
+							</div>
+						</div>
+
+						<div class="account">
+							<button class="btn modal_link" data-content="#login_modal">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+							</button>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="main_slider">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="slide swiper-slide">
+								<div class="cont">
+									<div class="info">
+										<div class="title">RF Лифтинг</div>
+
+										<div class="price">от 4 100 р.</div>
+
+										<div class="desc">Мгновенный стойкий лифтинг<br> Формирование каркаса лица</div>
+
+										<a href="/" class="link">
+											<span>Подробнее</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+										</a>
+									</div>
+								</div>
+
+								<div class="bg lozad" data-background-image="images/tmp/main_slider_img.jpg"></div>
+							</div>
+
+							<div class="slide swiper-slide">
+								<div class="cont">
+									<div class="info">
+										<div class="title">RF Лифтинг</div>
+
+										<div class="price">от 4 100 р.</div>
+
+										<div class="desc">Мгновенный стойкий лифтинг<br> Формирование каркаса лица</div>
+
+										<a href="/" class="link">
+											<span>Подробнее</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+										</a>
+									</div>
+								</div>
+
+								<div class="bg lozad" data-background-image="images/tmp/main_slider_img.jpg"></div>
+							</div>
+
+							<div class="slide swiper-slide">
+								<div class="cont">
+									<div class="info">
+										<div class="title">RF Лифтинг</div>
+
+										<div class="price">от 4 100 р.</div>
+
+										<div class="desc">Мгновенный стойкий лифтинг<br> Формирование каркаса лица</div>
+
+										<a href="/" class="link">
+											<span>Подробнее</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+										</a>
+									</div>
+								</div>
+
+								<div class="bg lozad" data-background-image="images/tmp/main_slider_img.jpg"></div>
+							</div>
+						</div>
+
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</section>
+
+
+				<section class="second_section">
+					<div class="cont">
+						<div class="block_title">Заголовок блока</div>
+
+						<div class="search">
+							<form action="">
+								<input type="text" name="" value="" class="input" placeholder="Введите название направления или технологии">
+
+								<button type="reset" class="reset_btn"></button>
+
+								<button type="submit" class="submit_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+								</button>
+
+								<div class="tips">
+									<div class="tip">Anty age</div>
+									<div class="tip">Anty age процедуры</div>
+									<div class="tip">Anty age программы</div>
+									<div class="tip">Anty age лорем ипсум</div>
+								</div>
+							</form>
+						</div>
+
+
+						<div class="links">
+							<div class="title">Компетенции</div>
+
+							<div class="row">
+								<div><a href="/">Косметология</a></div>
+								<div><a href="/">Гиперпигментация</a></div>
+								<div><a href="/">Лечение акне</a></div>
+								<div><a href="/"> Антивозрастные программа</a></div>
+								<div><a href="/">Эндокринология</a></div>
+								<div><a href="/">Мануальная терапия</a></div>
+								<div><a href="/">Рефлексотерапия</a></div>
+								<div><a href="/" class="more">
+									<span>Показать еще</span>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+								</a></div>
+							</div>
+						</div>
+
+
+						<div class="links">
+							<div class="title">Технологии</div>
+
+							<div class="row">
+								<div><a href="/">Ботокс</a></div>
+								<div><a href="/">Фракционный лазер</a></div>
+								<div><a href="/">DEKA</a></div>
+								<div><a href="/">ELOS</a></div>
+								<div><a href="/">Aqualix</a></div>
+								<div><a href="/">VPL ALT</a></div>
+								<div><a href="/">SMAS lifting</a></div>
+								<div><a href="/" class="more">
+									<span>Показать еще</span>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+								</a></div>
+							</div>
+						</div>
+
+
+						<div class="bottom">
+							<button class="order_btn">Записаться на консультацию</button>
+
+							<div class="exp">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_doctor"></use></svg>
+								<span>Мы назначаем лечение только после консультации специалиста!</span>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="promo_blocks">
+					<div class="cont">
+						<div class="row">
+							<div class="item">
+								<div class="thumb">
+									<img data-src="images/tmp/promo_blocks_thumb.png" alt="" class="lozad">
+								</div>
+
+								<div>
+									<div class="name">Профессиональная косметика</div>
+
+									<div class="desc">В нашем интернет-магазине</div>
+
+									<a href="/" class="link">
+										<span>Подробнее</span>
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+									</a>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="thumb">
+									<img data-src="images/tmp/promo_blocks_thumb2.png" alt="" class="lozad">
+								</div>
+
+								<div>
+									<div class="name">Подарочный сертификат</div>
+
+									<div class="desc">можно выбрать на любую сумму</div>
+
+									<a href="/" class="link">
+										<span>Подробнее</span>
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="news_stocks">
+					<div class="cont">
+						<div class="head">
+							<div class="block_title">Новости и акции</div>
+
+							<a href="/" class="all_link">
+								<span>Больше новостей</span>
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+							</a>
+						</div>
+
+						<div class="data">
+							<div class="news">
+								<div class="row">
+									<div class="item">
+										<a href="/" class="thumb">
+											<img data-src="images/tmp/news_thumb.jpg" alt="" class="lozad">
+										</a>
+
+										<div class="name">
+											<a href="/">Фракционный лазер - Anty age, акне, пигментация, растяжки и рубцы</a>
+										</div>
+
+										<div class="date">13 января 2021</div>
+									</div>
+
+									<div class="item">
+										<a href="/" class="thumb">
+											<img data-src="images/tmp/news_thumb2.jpg" alt="" class="lozad">
+										</a>
+
+										<div class="name">
+											<a href="/">Новогодние процедуры!</a>
+										</div>
+
+										<div class="date">24 декабря 2020</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="stocks">
+								<div class="list">
+									<div class="item">
+										<div class="name">
+											<a href="/">Новогодний подарок от Global Beauty! <span class="sticker">Акция</span></a>
+										</div>
+
+										<div class="date">16 декабря 2020</div>
+									</div>
+
+									<div class="item">
+										<div class="name">
+											<a href="/">Процедура сезона. Фракционный термолиз.</a>
+										</div>
+
+										<div class="date">30 ноября 2020</div>
+									</div>
+
+									<div class="item">
+										<div class="name">
+											<a href="/">Детоксикация</a>
+										</div>
+
+										<div class="date">11 ноября 2020</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="about_block">
+					<div class="cont row">
+						<div class="image">
+							<img data-src="images/tmp/about_block_img.jpg" alt="" class="lozad">
+						</div>
+
+						<div class="data">
+							<div class="title">Коротко о клинике</div>
+
+							<div class="text_block">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+							</div>
+
+							<div class="award">
+								<div class="year">2014</div>
+								<div class="name">Премия в области косметологии «Aurora health & beauty» номинация лучшая клиника Anty age</div>
+
+								<a href="/" class="all_link">
+									<span>Награды</span>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="contacts_block">
+					<div class="cont">
+						<div class="data">
+							<div class="location">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+
+								<div>г. Москва, переулок Столярный, дом 2. Станция метро "Краснопресненская" или "Улица 1905"</div>
+
+								<a href="/" class="schema_link">
+									<span>Схема проезда</span>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+								</a>
+							</div>
+
+							<div class="time">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_time"></use></svg>
+
+								<div>Режим работы c 10:00 до 21:00<br> (Воскресенье - выходной)</div>
+							</div>
+
+							<a href="/" class="requisites_link">
+								<span>Реквизиты</span>
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+							</a>
+						</div>
+
+						<div class="map_wrap">
+							<div class="map">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155421.59372217578!2d13.284650268477566!3d52.50697037927335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2z0JHQtdGA0LvQuNC9LCDQk9C10YDQvNCw0L3QuNGP!5e0!3m2!1sru!2sua!4v1617628420349!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="info">
+					<div class="cont row">
+						<div class="col_left">
+							<div class="logo">
+								<img src="images/logo.png" alt="">
+							</div>
+
+							<div class="socials">
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<img src="images/ic_facebook.svg" alt="">
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<img src="images/ic_instagram.svg" alt="">
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<img src="images/ic_vkontakte.svg" alt="">
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<img src="images/ic_youtube.svg" alt="">
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<img src="images/ic_yandex.svg" alt="">
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<img src="images/ic_google_plus.svg" alt="">
+								</a>
+							</div>
+
+							<div class="contacts">
+								<div class="phone">
+									<a href="tel:88003337715">8 (800) 333-77-15</a>
+								</div>
+
+								<div class="sep"></div>
+
+								<div class="email">
+									<a href="mailto:b@gclinic.ru">b@gclinic.ru</a>
+								</div>
+							</div>
+
+							<div class="whatsapp">
+								<a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+									<span>Помощь и консультация</span>
+								</a>
+							</div>
+
+							<div class="copyright">&copy; Global Beauty (ООО), 2005—2020</div>
+						</div>
+
+						<div class="links">
+							<div class="title">О компании</div>
+
+							<div class="list">
+								<div><a href="/"><span>Лицензия</span></a></div>
+								<div><a href="/"><span>Новости</span></a></div>
+								<div><a href="/"><span>Отзывы</span></a></div>
+								<div><a href="/"><span>Специалисты</span></a></div>
+								<div><a href="/"><span>Прайс-лист</span></a></div>
+								<div><a href="/"><span>Награды<br> и научная деятельность</span></a></div>
+								<div><a href="/"><span>Контакты</span></a></div>
+								<div><a href="/"><span>Реквизиты</span></a></div>
+							</div>
+						</div>
+
+						<div class="links">
+							<div class="title">Направления</div>
+
+							<div class="list">
+								<div><a href="/"><span>Косметология</span></a></div>
+								<div><a href="/"><span>Невролгия</span></a></div>
+								<div><a href="/"><span>Мануальная терапия</span></a></div>
+								<div><a href="/"><span>Эндокринология</span></a></div>
+								<div><a href="/"><span>Лечение акне</span></a></div>
+								<div><a href="/"><span>Антивозрастные<br> программы</span></a></div>
+								<div><a href="/"><span>Рефлексотерапия</span></a></div>
+								<div><a href="/"><span>Каталог анализов</span></a></div>
+							</div>
+						</div>
+
+						<div class="links">
+							<div class="title">Shop</div>
+
+							<div class="list">
+								<div><a href="/"><span>Подарочный сертификат</span></a></div>
+								<div><a href="/"><span>Бренды</span></a></div>
+								<div><a href="/"><span>Оплата и доставка</span></a></div>
+								<div><a href="/"><span>Возврат товара</span></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="bottom">
+					<div class="cont">
+						<div class="text">
+							<p>&copy; Global BeaИнформация на сайте не может быть использована как рекомендации для составления курса лечения. Метод лечения и препараты назначает врач после первичного осмотра. За самостоятельное назначение пациентом метода лечения клиника ответственности не несет. Информация на сайте является собственностью ООО «Глобальный проект «Красота», за несанкционированное копирование предусмотрена ответственность в соответствии с действующим законодательством РФ. Не является публичной офертой. Возможно изменение цен, уточняйте действующую стоимость у менеджера.</p>
+
+							<p>Заполняя формы обратной связи и нажимая на кнопки отправки, посетитель сайта соглашается с <a href="/">условиями передачи и обработки персональных данных.uty (ООО), 2005—2020</a></p>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="mob_fixed_menu">
+				<a class="active">
+					<div class="icon icon1">
+						<svg><use xlink:href="images/sprite.svg#ic_mob_menu1"></use></svg>
+					</div>
+					<div>Главная</div>
+				</a>
+
+				<a href="/">
+					<div class="icon icon2">
+						<svg><use xlink:href="images/sprite.svg#ic_mob_menu2"></use></svg>
+					</div>
+					<div>Магазин</div>
+				</a>
+
+				<a href="/">
+					<div class="icon icon3">
+						<div class="count">3</div>
+						<svg><use xlink:href="images/sprite.svg#ic_mob_menu3"></use></svg>
+					</div>
+					<div>Корзина</div>
+				</a>
+
+				<a href="/">
+					<div class="icon icon4">
+						<svg><use xlink:href="images/sprite.svg#ic_mob_menu4"></use></svg>
+					</div>
+					<div>Запись</div>
+				</a>
+
+				<a href="/">
+					<div class="icon icon5">
+						<svg><use xlink:href="images/sprite.svg#ic_mob_menu5"></use></svg>
+					</div>
+					<div>WhatsApp</div>
+				</a>
+			</div>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<section class="modal auth_modal" id="login_modal">
+			<div class="modal_title">Вход</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="line">
+						<div class="field">
+							<input type="email" name="" value="" class="input" placeholder="Ваш e-mail">
+
+							<div class="icon icon_email">
+								<svg><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="password" name="" value="" class="input" placeholder="Пароль">
+
+							<div class="icon icon_password">
+								<svg><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
+							</div>
+						</div>
+
+						<div class="exp">Чтобы сбросить пароль - просто оставьте это поле пустым.</div>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">Вход в личный кабинет</button>
+					</div>
+				</form>
+
+				<div class="bottom">Первый раз тут? <button class="modal_link" data-content="#register_modal">Зарегистрируйтесь!</button></div>
+			</div>
+		</section>
+
+
+		<section class="modal auth_modal" id="register_modal">
+			<div class="modal_title">Регистрация</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="line">
+						<div class="field">
+							<input type="email" name="" value="" class="input success" placeholder="Ваш e-mail">
+
+							<div class="icon icon_email">
+								<svg><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+							</div>
+						</div>
+
+						<div class="exp">На указанный email придёт письмо со ссылкой для активации.</div>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">Зарегистрироваться</button>
+					</div>
+				</form>
+
+				<div class="success_text">На указанный email пришло письмо с активацией.<br> Проверьте, пожалуйста почту!</div>
+
+				<div class="bottom">Уже были у нас? <button class="modal_link" data-content="#login_modal">Войти!</button></div>
+			</div>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/datepicker.min.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/masonry.min.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

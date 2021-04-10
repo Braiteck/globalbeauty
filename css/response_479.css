@@ -1,0 +1,1161 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 24px;
+        --font_size_title_small: 22px;
+    }
+
+
+    .cont
+    {
+        padding: 0 20px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs button
+    {
+        min-height: 44px;
+    }
+
+
+
+    /*-------------
+        Tooltip
+    -------------*/
+    .tooltip .text
+    {
+        width: 317px;
+    }
+
+
+
+    /*---------------
+        Prev/Next
+    ---------------*/
+    .prev_next
+    {
+        display: none;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .mob_header
+    {
+        padding: 10px 0;
+    }
+
+
+    .mob_header .mob_menu_btn
+    {
+        width: 44px;
+        height: 36px;
+    }
+
+    .mob_header .mob_menu_btn span:before
+    {
+        top: -8px;
+    }
+
+    .mob_header .mob_menu_btn span:after
+    {
+        top: 8px;
+    }
+
+
+    .mob_header .logo img
+    {
+        max-width: 110px;
+        max-height: 36px;
+    }
+
+    .mob_header .logo img + img
+    {
+        margin-left: 8px;
+    }
+
+
+    .mob_header .phone a .icon
+    {
+        width: 21px;
+        height: 21px;
+    }
+
+
+    .mob_header .search
+    {
+        margin-left: 18px;
+    }
+
+    .mob_header .search .btn .icon
+    {
+        width: 21px;
+        height: 21px;
+    }
+
+    .mob_header .search form .input
+    {
+        width: calc(100% - 92px);
+    }
+
+    .mob_header .search form .submit_btn
+    {
+        width: 92px;
+    }
+
+
+    .mob_header .account
+    {
+        margin-left: 18px;
+    }
+
+    .mob_header .account .btn .icon,
+    .mob_header .account .user .icon
+    {
+        width: 21px;
+        height: 21px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .breadcrumbs
+    {
+        font-size: 13px;
+        line-height: 19px;
+
+        letter-spacing: 0;
+    }
+
+    .breadcrumbs .sep
+    {
+        margin: 0 4px;
+    }
+
+    .breadcrumbs .current
+    {
+        white-space: nowrap;
+    }
+
+
+    .page_title
+    {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .desc
+    {
+        font-size: 15px;
+    }
+
+    .block_head.pad_right
+    {
+        padding-right: 104px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .submit_btn
+    {
+        font-size: 14px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+
+    .text_block ul > li
+    {
+        padding-left: 22px;
+    }
+
+    .text_block ul > li:before
+    {
+        top: 8px;
+    }
+
+
+
+    /*--------------
+        Analysis
+    --------------*/
+    .analysis .product .name
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+    .analysis .product .articul,
+    .analysis .product .duration
+    {
+        margin-top: 12px;
+    }
+
+
+
+    .analysis_info .features
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .analysis_info .features .val
+    {
+        font-size: 16px;
+    }
+
+
+    .analysis_info .total_price .val
+    {
+        font-size: 20px;
+    }
+
+    .analysis_info .buy_btn
+    {
+        height: 44px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .article .name
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .articles .article .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        margin-top: 12px;
+    }
+
+    .articles .article .date
+    {
+        font-size: 14px;
+        line-height: 22px;
+
+        margin-top: 8px;
+    }
+
+
+
+    /*------------------
+        Publications
+    ------------------*/
+    .publications .row
+    {
+        margin-left: 0;
+
+        --press_center_count: 1;
+    }
+
+    .publications .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .publications .article .name
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .publications .article .date
+    {
+        font-size: 14px;
+        line-height: 22px;
+
+        margin-top: 8px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .share > span
+    {
+        display: block;
+
+        width: 100%;
+        margin: 0 0 6px;
+    }
+
+
+
+    /*------------
+        Awards
+    ------------*/
+    .awards .item .year,
+    .awards .item .partner_name
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*------------
+        Brands
+    ------------*/
+    .brands .brand .logo
+    {
+        height: 80px;
+        margin-bottom: 12px;
+    }
+
+    .brands .brand .desc
+    {
+        font-size: 14px;
+        line-height: 18px;
+
+        margin-top: 8px;
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .empty
+    {
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 32px 24px;
+    }
+
+
+    .cart_info .empty .title
+    {
+        font-size: 19px;
+    }
+
+
+
+    /*----------------------
+        Cart info status
+    ----------------------*/
+    .cart_info_status .block_title .icon
+    {
+        margin: 0 auto 8px;
+    }
+
+    .cart_info_status .block_title .icon + *
+    {
+        display: block;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .cart_info_status .info
+    {
+        padding: 24px 28px;
+    }
+
+
+    .cart_info_status .links
+    {
+        margin-bottom: -12px;
+    }
+
+    .cart_info_status .links > *
+    {
+        width: 50%;
+        margin-bottom: 12px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .item .val
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .contacts_info .item .val .exp
+    {
+        font-size: 13px;
+    }
+
+    .contacts_info .item.phones .val .exp,
+    .contacts_info .item.whatsapp .val .exp
+    {
+        margin-left: 7px;
+    }
+
+
+    .contacts_info .map_links
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+    .contacts_info .map_wrap
+    {
+        padding-bottom: 100%;
+    }
+
+
+
+    /*---------------
+        Cats wall
+    ---------------*/
+    .cats_wall .item
+    {
+        min-height: 100px;
+        padding-left: 116px;
+    }
+
+    .cats_wall .item .name
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .cats_wall .item .btn
+    {
+        font-size: 16px;
+
+        margin-top: 8px;
+    }
+
+    .cats_wall .item .sub_cats
+    {
+        line-height: 17px;
+    }
+
+    .cats_wall .item .sub_cats > * + *
+    {
+        margin-top: 8px;
+    }
+
+
+    .cats_wall .item.big
+    {
+        min-height: 0;
+        padding: 20px;
+    }
+
+    .cats_wall .item.big .thumb
+    {
+        display: none;
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .data .head
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .cart_info .data .product .thumb
+    {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .cart_info .data .product .thumb + *
+    {
+        width: 100%;
+    }
+
+
+    .cart_info .auth_info .login_btn,
+    .cart_info .auth_info .continue_btn
+    {
+        font-size: 13px;
+        line-height: 19px;
+
+        padding: 12px 16px;
+    }
+
+
+
+    /*-------------------
+        Checkout info
+    -------------------*/
+    .checkout_info .form input[type=radio] + label
+    {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+
+    .checkout_info .form .delivery_price
+    {
+        padding: 16px 20px;
+    }
+
+
+    .checkout_info .form .logos img
+    {
+        max-width: 35px;
+    }
+
+    .checkout_info .form .logos > * + *
+    {
+        margin-left: 4px;
+    }
+
+
+    .checkout_info .notice
+    {
+        padding: 8px 0 8px 16px;
+    }
+
+
+
+    /*------------------
+        Service info
+    ------------------*/
+    .service_info .accordion .head
+    {
+        min-height: 48px;
+        padding: 12px 52px 12px 20px;
+    }
+
+    .service_info .accordion .title
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .service_info .accordion .data
+    {
+        padding: 20px;
+    }
+
+
+
+    /*---------
+        Faq
+    ---------*/
+    .faq .item .head
+    {
+        padding: 20px 72px 20px 20px;
+    }
+
+    .faq .item .head .icon
+    {
+        display: none;
+    }
+
+    .faq .item .title
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .faq .item .title
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .faq .item .data
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        padding: 0 20px 20px;
+    }
+
+
+    .faq .add_question_btn
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*----------------
+        Specialist
+    ----------------*/
+    .specialist .person .name
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .specialist .person .post
+    {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .specialist .person .desc
+    {
+        margin-top: 16px;
+    }
+
+
+
+    /*----------------
+        Error info
+    ----------------*/
+    .error_info .title
+    {
+        font-size: 18px;
+        line-height: 22px;
+
+        margin-top: 16px;
+    }
+
+
+    .error_info .text_block ul > li
+    {
+        padding-left: 0;
+    }
+
+
+
+    /*---------------
+        Gift cert
+    ---------------*/
+    .gift_cert .form .line
+    {
+        width: 173px;
+    }
+
+
+
+    /*----------------------
+        Gift cert status
+    ----------------------*/
+    .gift_cert_status .block_title .icon
+    {
+        margin: 0 auto 8px;
+    }
+
+    .gift_cert_status .block_title .icon + *
+    {
+        display: block;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .gift_cert_status .info
+    {
+        padding: 24px 28px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .slide .cont
+    {
+        min-height: 228px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+
+    .main_slider .slide .info
+    {
+        width: 232px;
+    }
+
+    .main_slider .slide .title
+    {
+        font-size: 32px;
+    }
+
+    .main_slider .slide .price
+    {
+        font-size: 16px;
+
+        margin-top: 4px;
+    }
+
+    .main_slider .slide .desc
+    {
+        font-size: 13px;
+        line-height: 17px;
+
+        margin-top: 16px;
+    }
+
+    .main_slider .slide .link
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        width: 145px;
+        height: 34px;
+    }
+
+
+
+    /*--------------------
+        Second section
+    --------------------*/
+    .second_section .block_title
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+    .second_section .links .row
+    {
+        margin-bottom: -8px;
+        margin-left: 0;
+    }
+
+    .second_section .links .row > *
+    {
+        width: 100%;
+        margin-bottom: 8px;
+        margin-left: 0;
+    }
+
+
+    .second_section .bottom .order_btn
+    {
+        font-size: 14px;
+
+        width: 292px;
+        height: 44px;
+    }
+
+
+
+    /*------------------
+        Promo blocks
+    ------------------*/
+    .promo_blocks .item
+    {
+        min-height: 160px;
+        padding: 20px 20px 20px 120px;
+    }
+
+    .promo_blocks .item .name
+    {
+        font-size: 17px;
+        line-height: 19px;
+    }
+
+    .promo_blocks .item .desc
+    {
+        font-size: 13px;
+        line-height: 15px;
+
+        margin-top: 8px;
+    }
+
+    .promo_blocks .item .thumb img
+    {
+        max-width: 75%;
+        max-height: 75%;
+    }
+
+
+
+    /*-----------------
+        About block
+    -----------------*/
+    .about_block .image
+    {
+        width: calc(100% + 48px);
+        max-width: calc(100% + 48px);
+        margin-right: -24px;
+    }
+
+
+    .about_block .data .award .name
+    {
+        max-width: calc(100% - 55px);
+    }
+
+
+    .about_block .data .award .all_link
+    {
+        margin-top: 16px;
+        margin-left: auto;
+    }
+
+
+
+    /*-----------------
+        News/Stocks
+    -----------------*/
+    .news_stocks .block_title
+    {
+        width: 100%;
+    }
+
+    .news_stocks .all_link
+    {
+        margin-top: 8px;
+    }
+
+
+    .news_stocks .news .row
+    {
+        margin-left: 0;
+    }
+
+    .news_stocks .news .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .news_stocks .news .item .thumb
+    {
+        margin-bottom: 12px;
+    }
+
+
+
+    /*--------------
+        Licenses
+    --------------*/
+    .licenses .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+
+    /*-----------------------
+        LK info - Bonuses
+    -----------------------*/
+    .lk_info .bonuses .info
+    {
+        padding: 24px 28px;
+    }
+
+    .lk_info .bonuses .info .title,
+    .lk_info .bonuses .info .text
+    {
+        font-size: 15px;
+    }
+
+
+    .lk_info .bonuses table th,
+    .lk_info .bonuses table td
+    {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+
+
+    /*----------------------
+        LK info - Orders
+    ----------------------*/
+    .lk_info .orders .sort .name
+    {
+        display: block;
+
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .lk_info .orders .sort .nice-select
+    {
+        margin-left: 0;
+    }
+
+
+
+    /*-----------------------
+        LK info - Profile
+    -----------------------*/
+    .lk_info .profile .form .exp
+    {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+
+
+    /*---------------
+        Discounts
+    ---------------*/
+    .discounts .discount .val
+    {
+        font-size: 32px;
+
+        width: 112px;
+        padding: 20px 12px;
+    }
+
+    .discounts .discount .val span
+    {
+        font-size: 44px;
+    }
+
+    .discounts .discount .val + *
+    {
+        width: calc(100% - 128px);
+    }
+
+    .discounts .discount .name
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .discounts .discount .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+
+    /*----------------
+        Requisites
+    ----------------*/
+    .requisites .item .name
+    {
+        width: 100%;
+        margin-bottom: 6px;
+
+        text-align: left;
+    }
+
+    .requisites .item .val
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .row
+    {
+        margin-bottom: -40px;
+        margin-left: 0;
+
+        --products_count: 1;
+    }
+
+    .products .row > *
+    {
+        width: 100%;
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+
+
+    .products .product .thumb
+    {
+        padding-bottom: 40%;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .brand
+    {
+        display: none;
+    }
+
+
+    .product_info .images .thumbs > *
+    {
+        width: calc(20% - 8px);
+    }
+
+
+    .product_info .data .price
+    {
+        font-size: 26px;
+    }
+
+    .product_info .data .status
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        margin-left: 32px;
+    }
+
+    .product_info .data .status .report_availability_btn
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        margin-top: 0;
+    }
+
+
+    .product_info .data .amount,
+    .product_info .data .volume
+    {
+        width: calc(50% - 4px);
+    }
+
+    .product_info .data .volume
+    {
+        margin-left: 8px;
+    }
+
+    .product_info .data .buy_btn
+    {
+        width: calc(50% - 4px);
+        max-width: 100%;
+        margin-left: 8px;
+    }
+
+    .product_info .data .volume + .buy_btn
+    {
+        width: 100%;
+        margin-top: 8px;
+        margin-left: 0;
+    }
+
+
+
+    /*-----------------
+        Person info
+    -----------------*/
+    .person_info .col_right .desc
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+    .person_info .features
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+
+    /*-----------------
+        Specialists
+    -----------------*/
+    .specialists .person .name
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+
+    /*--------------------
+        Mob fixed menu
+    --------------------*/
+    .mob_fixed_menu a
+    {
+        padding: 12px;
+    }
+
+    .mob_fixed_menu .icon
+    {
+        height: 28px;
+        margin-bottom: 5px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-bottom: 73px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 40px 24px;
+    }
+
+    .modal_title
+    {
+        font-size: 28px;
+        line-height: 32px;
+
+        margin-bottom: 28px;
+    }
+
+
+
+    .auth_modal .success_text
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+
+    #add_review_modal
+    {
+        padding: 40px 24px;
+    }
+}

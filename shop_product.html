@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#27aa99">
+		<meta name="theme-color" content="#27aa99">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/datepicker.min.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/ion.rangeSlider.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1179.css" media="print, (max-width: 1179px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<button class="close"></button>
+
+					<div class="mob_scroll">
+						<div class="top">
+							<div class="cont row">
+								<div class="time">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_time"></use></svg>
+									<span>10:00-21:00 Пн-Сб</span>
+								</div>
+
+								<div class="schema_link">
+									<a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+										<span>Схема проезда</span>
+									</a>
+								</div>
+
+								<div class="account">
+									<button class="no_line modal_link" data-content="#login_modal">Личный кабинет</button>
+
+									<!-- <span>Здравствуйте, <a href="/">Александра Иванова</a></span> -->
+
+									<div class="icon">
+										<svg><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									</div>
+
+									<!-- <div class="dropdown">
+										<div><a href="/">Профиль</a></div>
+										<div><a href="/">Заказы</a></div>
+										<div><a href="/">Бонусы</a></div>
+										<div><a href="/">Рассылки</a></div>
+										<div><a href="/">Выйти</a></div>
+									</div> -->
+								</div>
+							</div>
+						</div>
+
+
+						<div class="info">
+							<div class="cont row">
+								<a href="/" class="logo">
+									<img src="images/logo.png" alt="">
+								</a>
+
+								<div class="whatsapp">
+									<a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+										<span>Написать в WhatsApp</span>
+									</a>
+								</div>
+
+								<div class="phone">
+									<a href="tel:88003337715">8 (800) 333-77-15 </a>
+								</div>
+
+								<button class="order_btn modal_link" data-content="#order_modal">
+									<span>Записаться</span>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+								</button>
+							</div>
+						</div>
+
+
+						<div class="bottom">
+							<div class="cont row">
+								<nav class="menu row">
+									<div class="item">
+										<a href="/" class="sub_link">
+											О клинике<span class="arr"></span>
+										</a>
+
+										<div class="sub_menu">
+											<div class="cont row">
+												<div class="links">
+													<div><a href="/">О нас</a></div>
+													<div><a href="/">Лицензия</a></div>
+													<div><a href="/">Отзывы</a></div>
+													<div><a href="/">Публикации в СМИ</a></div>
+													<div><a href="/">Награды и научная деятельность</a></div>
+													<div><a href="/">Партнеры</a></div>
+													<div><a href="/">Контакты</a></div>
+													<div><a href="/">Реквизиты</a></div>
+													<div><a href="/">Программа лояльности</a></div>
+												</div>
+
+												<div class="banner">
+													<a href="/">
+														<img data-src="images/tmp/sub_menu_banner.jpg" alt="" class="lozad">
+													</a>
+												</div>
+											</div>
+
+											<div class="overlay"></div>
+										</div>
+									</div>
+
+									<div class="item">
+										<a href="/" class="sub_link active">
+											Направления<span class="arr"></span>
+										</a>
+
+										<div class="sub_menu">
+											<div class="cont row">
+												<div class="links">
+													<div><a href="/">О нас</a></div>
+													<div><a href="/">Лицензия</a></div>
+													<div><a href="/">Отзывы</a></div>
+													<div><a href="/">Публикации в СМИ</a></div>
+													<div><a href="/">Награды и научная деятельность</a></div>
+													<div><a href="/">Партнеры</a></div>
+													<div><a href="/">Контакты</a></div>
+													<div><a href="/">Реквизиты</a></div>
+													<div><a href="/">Программа лояльности</a></div>
+												</div>
+
+												<div class="banner">
+													<a href="/">
+														<img data-src="images/tmp/sub_menu_banner.jpg" alt="" class="lozad">
+													</a>
+												</div>
+											</div>
+
+											<div class="overlay"></div>
+										</div>
+									</div>
+
+									<div class="item">
+										<a href="/">технологии</a>
+									</div>
+
+									<div class="item">
+										<a href="/">Специалисты</a>
+									</div>
+
+									<div class="item">
+										<a href="/">Прайс</a>
+									</div>
+								</nav>
+
+								<a href="/" class="analysis_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_analysis"></use></svg>
+									<span>Каталог<br> анализов</span>
+								</a>
+
+								<div class="shop_link modal_cont">
+									<button class="btn mini_modal_btn" data-modal-id="#shop_modal">
+										<div class="icon">
+											<svg><use xlink:href="images/sprite.svg#ic_shop"></use></svg>
+											<div class="count">3</div>
+										</div>
+										<span>Магазин<br> косметики</span>
+									</button>
+
+									<a href="/" class="mob_link">
+										<div class="icon">
+											<svg><use xlink:href="images/sprite.svg#ic_shop"></use></svg>
+											<div class="count">3</div>
+										</div>
+										<span>Магазин<br> косметики</span>
+									</a>
+
+									<div class="mini_modal" id="shop_modal">
+										<div class="count">В корзине 3 товара</div>
+										<div class="price">На сумму 15 597 руб.</div>
+
+										<a href="/" class="checkout_link">
+											<span>Оформить заказ</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+										</a>
+
+										<a href="/" class="cart_link">Перейти в корзину</a>
+									</div>
+								</div>
+
+								<div class="search modal_cont">
+									<button class="btn mini_modal_btn" data-modal-id="#search_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+									</button>
+
+									<div class="mini_modal" id="search_modal">
+										<form action="">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+
+											<input type="text" name="" value="" class="input" placeholder="Введите название направления или технологии...">
+
+											<button type="submit" class="submit_btn">Найти</button>
+
+											<div class="tips">
+												<div class="tip">Anty age</div>
+												<div class="tip">Anty age процедуры</div>
+												<div class="tip">Anty age программы</div>
+												<div class="tip">Anty age лорем ипсум</div>
+											</div>
+										</form>
+
+										<div class="overlay"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+						<button class="mob_menu_btn">
+							<span></span>
+						</button>
+
+						<div class="logo">
+							<img src="images/logo_mobile.png" alt="">
+							<img src="images/logo.png" alt="">
+						</div>
+
+						<div class="phone">
+							<a href="tel:88003337715">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone2"></use></svg>
+							</a>
+						</div>
+
+						<div class="search modal_cont">
+							<button class="btn mini_modal_btn" data-modal-id="#mob_search_modal">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="mob_search_modal">
+								<form action="">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+
+									<input type="text" name="" value="" class="input" placeholder="Введите название направления или технологии...">
+
+									<button type="submit" class="submit_btn">Найти</button>
+
+									<div class="tips">
+										<div class="tip">Anty age</div>
+										<div class="tip">Anty age процедуры</div>
+										<div class="tip">Anty age программы</div>
+										<div class="tip">Anty age лорем ипсум</div>
+									</div>
+								</form>
+							</div>
+						</div>
+
+						<div class="account">
+							<button class="btn modal_link" data-content="#login_modal">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+							</button>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="page_head">
+					<div class="cont">
+						<div class="breadcrumbs">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+							<a href="/">Главная</a> <span class="sep">/</span>
+							<a href="/">Магазин косметики</a> <span class="sep">/</span>
+							<a href="/">Obagi medical, USA</a> <span class="sep">/</span>
+							<span class="current">Obagi C-Cleansing Gel</span>
+
+						</div>
+					</div>
+				</section>
+
+
+				<section class="content_flex block">
+					<div class="cont row">
+						<aside>
+							<button class="mob_filter_btn">Фильтр</button>
+
+							<div class="filter">
+								<div class="item">
+									<div class="name">Obagi medical, USA</div>
+
+									<div class="data">
+										<div class="links scroll very_big">
+											<div><a href="/">Obagi Hydrate Luxe</a></div>
+											<div><a href="/">Obagi C-Cleansing Gel</a></div>
+											<div><a href="/">Obagi C-Therapy Night Cream</a></div>
+											<div><a href="/">Сыворотка Pro-C 15%.</a></div>
+											<div><a href="/">Obagi C-Clarifying Serum</a></div>
+											<div><a href="/">Obagi C-Balancing Toner</a></div>
+											<div><a href="/">Obagi Hydrate</a></div>
+											<div><a href="/">Obagi ELASTIderm Eye Gel</a></div>
+											<div><a href="/">Obagi ELASTIderm Eye Cream</a></div>
+											<div><a href="/">Obagi Elastiderm Complete Complex Serum</a></div>
+											<div><a href="/">Obagi Foaming Gel</a></div>
+											<div><a href="/">Obagi C-Exfoliating Day Lotion</a></div>
+											<div><a href="/">Obagi Blend FX</a></div>
+											<div><a href="/">Obagi Hydrate Luxe</a></div>
+											<div><a href="/">Obagi C-Cleansing Gel</a></div>
+											<div><a href="/">Obagi C-Therapy Night Cream</a></div>
+											<div><a href="/">Сыворотка Pro-C 15%.</a></div>
+											<div><a href="/">Obagi C-Clarifying Serum</a></div>
+											<div><a href="/">Obagi C-Balancing Toner</a></div>
+											<div><a href="/">Obagi Hydrate</a></div>
+											<div><a href="/">Obagi ELASTIderm Eye Gel</a></div>
+											<div><a href="/">Obagi ELASTIderm Eye Cream</a></div>
+											<div><a href="/">Obagi Elastiderm Complete Complex Serum</a></div>
+											<div><a href="/">Obagi Foaming Gel</a></div>
+											<div><a href="/">Obagi C-Exfoliating Day Lotion</a></div>
+											<div><a href="/">Obagi Blend FX</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="banners">
+								<div class="banner">
+									<a href="/">
+										<img src="images/tmp/aside_banner_img1.jpg" alt="">
+									</a>
+								</div>
+
+								<div class="banner">
+									<a href="/">
+										<img src="images/tmp/aside_banner_img2.jpg" alt="">
+									</a>
+								</div>
+							</div>
+						</aside>
+
+
+						<section class="content">
+							<section class="product_info">
+								<div class="block_data">
+									<div class="block_head">
+										<h1 class="title">Obagi C-Cleansing Gel</h1>
+
+										<div class="brand">
+											<a href="/">
+												<img src="images/tmp/brand_logo2.png" alt="">
+											</a>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="images">
+											<div class="big">
+												<div class="swiper-container">
+													<div class="swiper-wrapper">
+														<div class="slide swiper-slide">
+															<a href="images/tmp/product_img.jpg" class="fancy_img img" data-fancybox="gallery">
+																<div><img data-src="images/tmp/product_img.jpg" alt="" class="lozad"></div>
+															</a>
+														</div>
+
+														<div class="slide swiper-slide">
+															<a href="images/tmp/product_img.jpg" class="fancy_img img" data-fancybox="gallery">
+																<div><img data-src="images/tmp/product_img.jpg" alt="" class="lozad"></div>
+															</a>
+														</div>
+
+														<div class="slide swiper-slide">
+															<a href="images/tmp/product_img.jpg" class="fancy_img img" data-fancybox="gallery">
+																<div><img data-src="images/tmp/product_img.jpg" alt="" class="lozad"></div>
+															</a>
+														</div>
+
+														<div class="slide swiper-slide">
+															<a href="images/tmp/product_img.jpg" class="fancy_img img" data-fancybox="gallery">
+																<div><img data-src="images/tmp/product_img.jpg" alt="" class="lozad"></div>
+															</a>
+														</div>
+													</div>
+
+													<div class="swiper-button-prev"></div>
+													<div class="swiper-button-next"></div>
+												</div>
+											</div>
+
+											<div class="thumbs">
+												<button class="active" data-slide-index="0">
+													<img data-src="images/tmp/product_img.jpg" alt="" class="lozad">
+												</button>
+
+												<button data-slide-index="1">
+													<img data-src="images/tmp/product_img.jpg" alt="" class="lozad">
+												</button>
+
+												<button data-slide-index="2">
+													<img data-src="images/tmp/product_img.jpg" alt="" class="lozad">
+												</button>
+
+												<button data-slide-index="3">
+													<img data-src="images/tmp/product_img.jpg" alt="" class="lozad">
+												</button>
+											</div>
+										</div>
+
+
+										<div class="data">
+											<div class="desc text_block">
+												<p>Очищающий гель с витамином С, подготавливает и смягчает кожу для лучшего проникновения активных компонентов системы.</p>
+											</div>
+
+											<div class="features">
+												<div><b>Объем упаковки:</b> 180 мл</div>
+												<div><b>Страна производства:</b> США</div>
+											</div>
+
+											<div class="articul">Код товара: 854097</div>
+
+											<div class="buy">
+												<div class="row">
+													<div class="price">3 950 руб.</div>
+													<div class="status green">В наличии</div>
+												</div>
+
+												<div class="row">
+													<div class="amount">
+														<button type="button" class="minus"></button>
+
+														<input type="text" value="1" class="input"
+														  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+														<button type="button" class="plus"></button>
+													</div>
+
+													<div class="volume">
+														<select name="">
+															<option value="1" selected>180 ml</option>
+															<option value="2">180 ml</option>
+															<option value="3">180 ml</option>
+														</select>
+													</div>
+
+													<button class="buy_btn">В корзину</button>
+												</div>
+											</div>
+
+											<div class="payment_delivery_link">
+												<a href="/">
+													<span>Правила оплаты и доставки товара</span>
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="bottom">
+										<div class="phone">
+											<div>
+												<div>Бесплатная консультация врача-косметолога</div>
+												<div><a href="tel:88003337715">8 (800) 333-77-15</a> <span>(звонок бесплатный)</span></div>
+											</div>
+										</div>
+
+										<a href="/" class="whatsapp">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+											<span>Консультация в WhatsApp</span>
+										</a>
+									</div>
+								</div>
+
+
+								<div class="block_data tabs_container">
+									<div class="tabs">
+										<button data-content="#tab1" data-level="level1" class="active">О товаре</button>
+										<button data-content="#tab2" data-level="level1">Применение</button>
+										<button data-content="#tab3" data-level="level1">Состав</button>
+										<button data-content="#tab4" data-level="level1">Отзывы <span>15</span></button>
+									</div>
+
+
+									<div class="tab_content level1 active" id="tab1">
+										<div class="text_block">
+											<p>Очищающий гель с витамином С, подготавливает и смягчает кожу для лучшего проникновения активных компонентов системы.</p>
+
+											<p>Глубоко очищает кожу, удаляя косметику, избытки жира и загрязнений.</p>
+										</div>
+									</div>
+
+
+									<div class="tab_content level1" id="tab2">
+
+									</div>
+
+
+									<div class="tab_content level1" id="tab3">
+
+									</div>
+
+
+									<div class="tab_content level1" id="tab4">
+
+									</div>
+								</div>
+							</section>
+
+
+							<section class="products">
+								<div class="block_data">
+									<div class="block_head pad_right">
+										<div class="title">Рекомендации к покупки серии</div>
+									</div>
+
+									<div class="carousel_wrap">
+										<div class="swiper-container carousel">
+											<div class="swiper-wrapper">
+												<div class="slide swiper-slide">
+													<div class="product">
+														<a href="/" class="thumb">
+															<div><img data-src="images/tmp/product_thumb.jpg" alt="" class="lozad"></div>
+														</a>
+
+														<div class="name">
+															<a href="/">Obagi Hydrate Luxe</a>
+														</div>
+
+														<div class="desc">
+															<p>Интенсивный увлажняющий крем</p>
+															<p>Эффективное средство для увлажнения и восстановления кожи</p>
+														</div>
+
+														<div class="buy">
+															<div class="price">6 850 руб.</div>
+															<div class="status green">В наличии</div>
+
+															<button class="buy_btn">
+																<span>В корзину</span>
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+															</button>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="slide swiper-slide">
+													<div class="product">
+														<a href="/" class="thumb">
+															<div><img data-src="images/tmp/product_thumb2.jpg" alt="" class="lozad"></div>
+														</a>
+
+														<div class="name">
+															<a href="/">Obagi C-Cleansing Gel</a>
+														</div>
+
+														<div class="desc">
+															<p>Очищающий гель с вит. С</p>
+															<p>Подготавливает и смягчает кожу для лучшего проникновения активных компонентов системы.</p>
+														</div>
+
+														<div class="buy">
+															<div class="price">3 950 руб.</div>
+															<div class="status red">Нет в наличии</div>
+
+															<button class="buy_btn">
+																<span>В корзину</span>
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+															</button>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="slide swiper-slide">
+													<div class="product">
+														<a href="/" class="thumb">
+															<div><img data-src="images/tmp/product_thumb3.jpg" alt="" class="lozad"></div>
+														</a>
+
+														<div class="name">
+															<a href="/">Obagi C-Cleansing Gel</a>
+														</div>
+
+														<div class="desc">
+															<p>Ночной крем для выравнивания тона кожи</p>
+															<p>Корректирует меланогенез, выравнивает цвет кожи, улучшает текстуру, связывает свободные радикалы.</p>
+														</div>
+
+														<div class="buy">
+															<div class="price">9 600 руб.</div>
+															<div class="status green">В наличии</div>
+
+															<button class="buy_btn">
+																<span>В корзину</span>
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+															</button>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="slide swiper-slide">
+													<div class="product">
+														<a href="/" class="thumb">
+															<div><img data-src="images/tmp/product_thumb.jpg" alt="" class="lozad"></div>
+														</a>
+
+														<div class="name">
+															<a href="/">Obagi Hydrate Luxe</a>
+														</div>
+
+														<div class="desc">
+															<p>Интенсивный увлажняющий крем</p>
+															<p>Эффективное средство для увлажнения и восстановления кожи</p>
+														</div>
+
+														<div class="buy">
+															<div class="price">6 850 руб.</div>
+															<div class="status green">В наличии</div>
+
+															<button class="buy_btn">
+																<span>В корзину</span>
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+															</button>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="slide swiper-slide">
+													<div class="product">
+														<a href="/" class="thumb">
+															<div><img data-src="images/tmp/product_thumb2.jpg" alt="" class="lozad"></div>
+														</a>
+
+														<div class="name">
+															<a href="/">Obagi C-Cleansing Gel</a>
+														</div>
+
+														<div class="desc">
+															<p>Очищающий гель с вит. С</p>
+															<p>Подготавливает и смягчает кожу для лучшего проникновения активных компонентов системы.</p>
+														</div>
+
+														<div class="buy">
+															<div class="price">3 950 руб.</div>
+															<div class="status red">Нет в наличии</div>
+
+															<button class="buy_btn">
+																<span>В корзину</span>
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+															</button>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="slide swiper-slide">
+													<div class="product">
+														<a href="/" class="thumb">
+															<div><img data-src="images/tmp/product_thumb3.jpg" alt="" class="lozad"></div>
+														</a>
+
+														<div class="name">
+															<a href="/">Obagi C-Cleansing Gel</a>
+														</div>
+
+														<div class="desc">
+															<p>Ночной крем для выравнивания тона кожи</p>
+															<p>Корректирует меланогенез, выравнивает цвет кожи, улучшает текстуру, связывает свободные радикалы.</p>
+														</div>
+
+														<div class="buy">
+															<div class="price">9 600 руб.</div>
+															<div class="status green">В наличии</div>
+
+															<button class="buy_btn">
+																<span>В корзину</span>
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="swiper-button-prev carousel-swiper-button-prev"></div>
+										<div class="swiper-button-next carousel-swiper-button-next"></div>
+									</div>
+
+									<button class="buy_set_btn">Купить набором</button>
+								</div>
+							</section>
+						</section>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="info">
+					<div class="cont row">
+						<div class="col_left">
+							<div class="logo">
+								<img src="images/logo.png" alt="">
+							</div>
+
+							<div class="socials">
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<img src="images/ic_facebook.svg" alt="">
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<img src="images/ic_instagram.svg" alt="">
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<img src="images/ic_vkontakte.svg" alt="">
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<img src="images/ic_youtube.svg" alt="">
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<img src="images/ic_yandex.svg" alt="">
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<img src="images/ic_google_plus.svg" alt="">
+								</a>
+							</div>
+
+							<div class="contacts">
+								<div class="phone">
+									<a href="tel:88003337715">8 (800) 333-77-15</a>
+								</div>
+
+								<div class="sep"></div>
+
+								<div class="email">
+									<a href="mailto:b@gclinic.ru">b@gclinic.ru</a>
+								</div>
+							</div>
+
+							<div class="whatsapp">
+								<a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+									<span>Помощь и консультация</span>
+								</a>
+							</div>
+
+							<div class="copyright">&copy; Global Beauty (ООО), 2005—2020</div>
+						</div>
+
+						<div class="links">
+							<div class="title">О компании</div>
+
+							<div class="list">
+								<div><a href="/"><span>Лицензия</span></a></div>
+								<div><a href="/"><span>Новости</span></a></div>
+								<div><a href="/"><span>Отзывы</span></a></div>
+								<div><a href="/"><span>Специалисты</span></a></div>
+								<div><a href="/"><span>Прайс-лист</span></a></div>
+								<div><a href="/"><span>Награды<br> и научная деятельность</span></a></div>
+								<div><a href="/"><span>Контакты</span></a></div>
+								<div><a href="/"><span>Реквизиты</span></a></div>
+							</div>
+						</div>
+
+						<div class="links">
+							<div class="title">Направления</div>
+
+							<div class="list">
+								<div><a href="/"><span>Косметология</span></a></div>
+								<div><a href="/"><span>Невролгия</span></a></div>
+								<div><a href="/"><span>Мануальная терапия</span></a></div>
+								<div><a href="/"><span>Эндокринология</span></a></div>
+								<div><a href="/"><span>Лечение акне</span></a></div>
+								<div><a href="/"><span>Антивозрастные<br> программы</span></a></div>
+								<div><a href="/"><span>Рефлексотерапия</span></a></div>
+								<div><a href="/"><span>Каталог анализов</span></a></div>
+							</div>
+						</div>
+
+						<div class="links">
+							<div class="title">Shop</div>
+
+							<div class="list">
+								<div><a href="/"><span>Подарочный сертификат</span></a></div>
+								<div><a href="/"><span>Бренды</span></a></div>
+								<div><a href="/"><span>Оплата и доставка</span></a></div>
+								<div><a href="/"><span>Возврат товара</span></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="bottom">
+					<div class="cont">
+						<div class="text">
+							<p>&copy; Global BeaИнформация на сайте не может быть использована как рекомендации для составления курса лечения. Метод лечения и препараты назначает врач после первичного осмотра. За самостоятельное назначение пациентом метода лечения клиника ответственности не несет. Информация на сайте является собственностью ООО «Глобальный проект «Красота», за несанкционированное копирование предусмотрена ответственность в соответствии с действующим законодательством РФ. Не является публичной офертой. Возможно изменение цен, уточняйте действующую стоимость у менеджера.</p>
+
+							<p>Заполняя формы обратной связи и нажимая на кнопки отправки, посетитель сайта соглашается с <a href="/">условиями передачи и обработки персональных данных.uty (ООО), 2005—2020</a></p>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="mob_fixed_menu">
+				<a class="active">
+					<div class="icon icon1">
+						<svg><use xlink:href="images/sprite.svg#ic_mob_menu1"></use></svg>
+					</div>
+					<div>Главная</div>
+				</a>
+
+				<a href="/">
+					<div class="icon icon2">
+						<svg><use xlink:href="images/sprite.svg#ic_mob_menu2"></use></svg>
+					</div>
+					<div>Магазин</div>
+				</a>
+
+				<a href="/">
+					<div class="icon icon3">
+						<div class="count">3</div>
+						<svg><use xlink:href="images/sprite.svg#ic_mob_menu3"></use></svg>
+					</div>
+					<div>Корзина</div>
+				</a>
+
+				<a href="/">
+					<div class="icon icon4">
+						<svg><use xlink:href="images/sprite.svg#ic_mob_menu4"></use></svg>
+					</div>
+					<div>Запись</div>
+				</a>
+
+				<a href="/">
+					<div class="icon icon5">
+						<svg><use xlink:href="images/sprite.svg#ic_mob_menu5"></use></svg>
+					</div>
+					<div>WhatsApp</div>
+				</a>
+			</div>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<section class="modal auth_modal" id="login_modal">
+			<div class="modal_title">Вход</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="line">
+						<div class="field">
+							<input type="email" name="" value="" class="input" placeholder="Ваш e-mail">
+
+							<div class="icon icon_email">
+								<svg><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="password" name="" value="" class="input" placeholder="Пароль">
+
+							<div class="icon icon_password">
+								<svg><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
+							</div>
+						</div>
+
+						<div class="exp">Чтобы сбросить пароль - просто оставьте это поле пустым.</div>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">Вход в личный кабинет</button>
+					</div>
+				</form>
+
+				<div class="bottom">Первый раз тут? <button class="modal_link" data-content="#register_modal">Зарегистрируйтесь!</button></div>
+			</div>
+		</section>
+
+
+		<section class="modal auth_modal" id="register_modal">
+			<div class="modal_title">Регистрация</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="line">
+						<div class="field">
+							<input type="email" name="" value="" class="input success" placeholder="Ваш e-mail">
+
+							<div class="icon icon_email">
+								<svg><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+							</div>
+						</div>
+
+						<div class="exp">На указанный email придёт письмо со ссылкой для активации.</div>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">Зарегистрироваться</button>
+					</div>
+				</form>
+
+				<div class="success_text">На указанный email пришло письмо с активацией.<br> Проверьте, пожалуйста почту!</div>
+
+				<div class="bottom">Уже были у нас? <button class="modal_link" data-content="#login_modal">Войти!</button></div>
+			</div>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/datepicker.min.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/masonry.min.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

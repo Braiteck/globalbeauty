@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<style>
+			*
+			{
+			    box-sizing: border-box;
+			    margin: 0;
+			    padding: 0;
+			}
+
+			*:before,
+			*:after
+			{
+			    box-sizing: border-box;
+			}
+
+
+			.demo_links
+			{
+			    padding: 60px;
+			}
+
+			.demo_links .title
+			{
+			    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+			    font-size: 30px;
+			    font-weight: 700;
+			    line-height: 38px;
+
+			    margin-bottom: 40px;
+			}
+
+			.demo_links ol
+			{
+			    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+			    font-size: 15px;
+			    line-height: 21px;
+
+			    counter-reset: li;
+
+			    column-gap: 40px;
+			    column-count: 4;
+			}
+
+			.demo_links ol li
+			{
+			    position: relative;
+
+			    display: block;
+			    overflow: hidden;
+
+			    padding-left: 25px;
+
+			    list-style-type: none;
+
+			    transform: translateZ(0);
+
+			    --webkit-column-break-inside: avoid;
+			    page-break-inside: avoid;
+			    break-inside: avoid;
+			}
+
+			.demo_links ol li + li
+			{
+			    margin-top: 20px;
+			}
+
+			.demo_links ol li:before
+			{
+			    color: var(--text_color);
+			    font-weight: 700;
+
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+
+			    content: counters(li, '.') '.';
+			    counter-increment: li;
+			}
+
+
+			.demo_links li a
+			{
+			    color: #000;
+			}
+
+			.demo_links li a:hover
+			{
+			    text-decoration: none;
+			}
+
+
+			@media (max-width: 1279px)
+			{
+			    .demo_links ol
+			    {
+			        column-count: 3;
+			    }
+			}
+
+
+			@media (max-width: 1023px)
+			{
+			    .demo_links
+			    {
+			        padding: 40px;
+			    }
+
+			    .demo_links .title
+			    {
+			        font-size: 28px;
+			        line-height: 34px;
+
+			        margin-bottom: 25px;
+			    }
+
+			    .demo_links ol
+			    {
+			        column-count: 2;
+			    }
+			}
+
+
+			@media (max-width: 767px)
+			{
+			    .demo_links
+			    {
+			        padding: 30px;
+			    }
+
+			    .demo_links .title
+			    {
+			        font-size: 26px;
+			        line-height: 32px;
+			    }
+
+			    .demo_links ol
+			    {
+			        column-gap: 40px;
+			    }
+			}
+
+
+			@media (max-width: 479px)
+			{
+			    .demo_links
+			    {
+			        padding: 20px;
+			    }
+
+			    .demo_links .title
+			    {
+			        font-size: 22px;
+			        line-height: 28px;
+
+			        margin-bottom: 25px;
+			    }
+
+			    .demo_links ol
+			    {
+			        column-count: 1;
+			    }
+
+			    .demo_links ol li + li
+			    {
+			        margin-top: 15px;
+			    }
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div class="demo_links">
+			<div class="title">Вёрстка сайта "Global Beauty".</div>
+
+			<ol>
+				<li><a href="/index.html" target="_blank">Главная страница</a></li>
+				<li><a href="/analysis.html" target="_blank">Каталог анализов</a></li>
+				<li><a href="/analysis_item.html" target="_blank">Анализ</a></li>
+				<li><a href="/article.html" target="_blank">Статья</a></li>
+				<li><a href="/articles.html" target="_blank">Статьи</a></li>
+				<li><a href="/awards.html" target="_blank">Награды (+ табы)</a></li>
+				<li><a href="/brands.html" target="_blank">Бренды</a></li>
+				<li><a href="/cart.html" target="_blank">Корзина</a></li>
+				<li><a href="/cart2.html" target="_blank">Оформление заказа</a></li>
+				<li><a href="/cart_empty.html" target="_blank">Корзина пустая</a></li>
+				<li><a href="/cart_error.html" target="_blank">Корзина ошибка</a></li>
+				<li><a href="/cart_success.html" target="_blank">Корзина успех</a></li>
+				<li><a href="/contacts.html" target="_blank">Контакты</a></li>
+				<li><a href="/destinations.html" target="_blank">Направления</a></li>
+				<li><a href="/destinations_item.html" target="_blank">Направления - услуга</a></li>
+				<li><a href="/destinations_item2.html" target="_blank">Направления - услуга 2</a></li>
+				<li><a href="/error_page.html" target="_blank">Страница ошибк</a></li>
+				<li><a href="/gift_certificate.html" target="_blank">Подарочный сертификат</a></li>
+				<li><a href="/gift_certificate_no.html" target="_blank">Подарочный сертификат ошибка</a></li>
+				<li><a href="/gift_certificate_yes.html" target="_blank">Подарочный сертификат успех</a></li>
+				<li><a href="/licenses.html" target="_blank">Лицензии (+ табы)</a></li>
+				<li><a href="/lk_bonuses.html" target="_blank">ЛК - бонусы</a></li>
+				<li><a href="/lk_login.html" target="_blank">ЛК - вход</a></li>
+				<li><a href="/lk_newsletters.html" target="_blank">ЛК - рассылка</a></li>
+				<li><a href="/lk_orders.html" target="_blank">ЛК - заказы</a></li>
+				<li><a href="/lk_profile.html" target="_blank">ЛК - профиль</a></li>
+				<li><a href="/lk_register.html" target="_blank">ЛК - регистрация</a></li>
+				<li><a href="/loyalty_program.html" target="_blank">Программа лояльности</a></li>
+				<li><a href="/payment_delivery.html" target="_blank">Доставка/Оплата</a></li>
+				<li><a href="/price_list.html" target="_blank">Прайс-лист</a></li>
+				<li><a href="/requisites.html" target="_blank">Реквизиты</a></li>
+				<li><a href="/reviews.html" target="_blank">Отзывы</a></li>
+				<li><a href="/search.html" target="_blank">Результат поиска</a></li>
+				<li><a href="/search_empty.html" target="_blank">Результат поиска - пусто</a></li>
+				<li><a href="/shop_category.html" target="_blank">Магазин - категория</a></li>
+				<li><a href="/shop_product.html" target="_blank">Магазин - страница товара</a></li>
+				<li><a href="/shop_product2.html" target="_blank">Магазин - страница товара 2</a></li>
+				<li><a href="/shop_product3.html" target="_blank">Магазин - страница товара 3</a></li>
+				<li><a href="/sitemap.html" target="_blank">Карта сайта</a></li>
+				<li><a href="/specialist.html" target="_blank">Специалист</a></li>
+				<li><a href="/specialists.html" target="_blank">Специалисты</a></li>
+				<li><a href="/technologies.html" target="_blank">Технологии</a></li>
+				<li><a href="/technologies_item.html" target="_blank">Технологии услуга</a></li>
+				<li><a href="/text_page.html" target="_blank">Текстовая страница</a></li>
+			</ol>
+		</div>
+	</body>
+</html>
