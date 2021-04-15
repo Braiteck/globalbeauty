@@ -16,6 +16,14 @@
     }
 
 
+    .block_data
+    {
+        width: calc(100% + 40px);
+        margin: 0 -20px;
+        padding: 32px 20px;
+    }
+
+
 
     /*----------
         Tabs
@@ -1069,6 +1077,23 @@
         width: 100%;
         margin-top: 8px;
         margin-left: 0;
+    }
+
+
+
+    .product_info .reviews.active
+    {
+        margin: -20px;
+    }
+
+    .product_info .reviews .review
+    {
+        padding: 20px;
+    }
+
+    .product_info .reviews .review .date
+    {
+        margin-top: 6px;
     }
 
 

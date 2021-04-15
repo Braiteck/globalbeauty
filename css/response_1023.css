@@ -1624,6 +1624,23 @@
 
 
 
+    .product_info .reviews.active
+    {
+        margin: -32px;
+    }
+
+    .product_info .reviews .review
+    {
+        padding: 32px;
+    }
+
+    .product_info .reviews .review.answer
+    {
+        margin-top: 32px;
+    }
+
+
+
     /*-----------------
         Person info
     -----------------*/

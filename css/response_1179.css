@@ -1717,6 +1717,30 @@
 
 
 
+    .product_info .reviews.active
+    {
+        margin: -36px;
+    }
+
+    .product_info .reviews .review
+    {
+        padding: 36px;
+    }
+
+    .product_info .reviews .review .text_block
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .product_info .reviews .review.answer
+    {
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
+
+
     /*-----------------
         Person info
     -----------------*/

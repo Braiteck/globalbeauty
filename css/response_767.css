@@ -1945,6 +1945,27 @@
 
 
 
+    .product_info .reviews.active
+    {
+        margin: -24px;
+    }
+
+    .product_info .reviews .review
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 24px;
+    }
+
+    .product_info .reviews .review .author,
+    .product_info .reviews .review .info
+    {
+        width: 100%;
+    }
+
+
+
     /*-------------
         Sitemap
     -------------*/

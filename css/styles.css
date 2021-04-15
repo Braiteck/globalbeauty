@@ -7596,6 +7596,11 @@ aside .banners .banner img
     width: 15px;
 }
 
+.reviews .review .rating img.grey
+{
+    opacity: .3;
+}
+
 .reviews .review .rating > * + *
 {
     margin-left: 4px;
@@ -10583,6 +10588,67 @@ aside .banners .banner img
 {
     font-size: 16px;
     line-height: 24px;
+}
+
+
+
+.product_info .reviews.active
+{
+    margin: -40px;
+}
+
+.product_info .reviews .review
+{
+    padding: 40px;
+}
+
+.product_info .reviews .review + .review
+{
+    margin: 0;
+
+    border-top: 8px solid var(--bg);
+}
+
+.product_info .reviews .review .author
+{
+    width: 136px;
+}
+
+.product_info .reviews .review .name
+{
+    margin: 0;
+}
+
+.product_info .reviews .review .date
+{
+    width: 100%;
+    margin-top: 12px;
+    padding: 0;
+
+    border: none;
+}
+
+.product_info .reviews .review .info
+{
+    width: calc(100% - 156px);
+}
+
+.product_info .reviews .review .text_block
+{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.product_info .reviews .review .reply_btn
+{
+    margin-top: 12px;
+}
+
+
+.product_info .reviews .review.answer
+{
+    margin-top: 50px;
+    margin-left: 25px;
 }
 
 
